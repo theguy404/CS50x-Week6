@@ -12,7 +12,7 @@ for i in range(height):
         print(" ", end="")
     for block1 in range(block):
         print("#", end="")
-    print(" ", end="")
+    print("  ", end="")
     for block2 in range(block):
         print("#", end="")
     print("")

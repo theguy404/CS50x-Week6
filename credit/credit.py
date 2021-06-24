@@ -3,6 +3,7 @@ import cs50
 creditNum = 0
 ccLength = 0
 
+
 def main():
     while True:
         creditNum = cs50.get_int("Number: ")
@@ -15,6 +16,7 @@ def main():
         print(cctype(ccLength, creditNum))
     else:
         print("INVALID\n")
+
 
 def checksum():
     value = 0
@@ -33,6 +35,7 @@ def checksum():
         return True
     else:
         return False
+
 
 def cctype(ccLength, creditNum):
     if ccLength == 15:
@@ -58,6 +61,7 @@ def cctype(ccLength, creditNum):
             return("INVALID\n")
     else:
         return("outside INVALID\n")
+
 
 if __name__ == "__main__":
     main()
